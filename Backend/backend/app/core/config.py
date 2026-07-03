@@ -3,7 +3,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
     # Database
-    DATABASE_URL: str = "mysql+pymysql://root:password@localhost:3306/rent_flatmate_finder"
+    DATABASE_URL: str = "mysql+pymysql://root:password@localhost:3306/nestify"
 
     # JWT
     JWT_SECRET_KEY: str = "change_this_secret"
@@ -21,7 +21,7 @@ class Settings(BaseSettings):
     MAIL_FROM: str = "noreply@example.com"
     MAIL_PORT: int = 587
     MAIL_SERVER: str = "smtp.gmail.com"
-    MAIL_FROM_NAME: str = "Rent & Flatmate Finder"
+    MAIL_FROM_NAME: str = "Nestify"
 
     HIGH_MATCH_THRESHOLD: int = 80
 

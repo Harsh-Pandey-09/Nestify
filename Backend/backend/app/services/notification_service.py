@@ -33,7 +33,7 @@ def _build_email_content(notif_type: NotificationType, message: str) -> tuple[st
         NotificationType.new_message: "New chat message",
         NotificationType.listing_filled: "Listing marked as filled",
     }
-    subject = subject_map.get(notif_type, "Rent & Flatmate Finder notification")
+    subject = subject_map.get(notif_type, "Nestify notification")
     body = f"<p>{message}</p>"
     return subject, body
 

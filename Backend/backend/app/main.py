@@ -14,8 +14,8 @@ logging.basicConfig(level=logging.INFO)
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
-    title="Rent & Flatmate Finder API",
-    description="Room listings, AI-powered compatibility scoring, real-time chat, and notifications.",
+    title="Nestify API",
+    description="Backend API for the Nestify platform providing authentication, property listings, compatibility scoring, real-time chat, and notifications.",
     version="1.0.0",
 )
 
@@ -42,4 +42,4 @@ app.include_router(admin.router)
 
 @app.get("/", tags=["Health"])
 def health_check():
-    return {"status": "ok", "service": "Rent & Flatmate Finder API"}
+    return {"status": "ok", "service": "Nestify API"}

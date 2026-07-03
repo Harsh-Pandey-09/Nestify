@@ -1,4 +1,4 @@
-# System Design Write-Up — Rent & Flatmate Finder
+# System Design Write-Up — Nestify
 
 ## 1. Compatibility Scoring Design
 

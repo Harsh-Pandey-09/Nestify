@@ -1,8 +1,6 @@
-# Rent & Flatmate Finder — Backend
+# Nestify — Backend
 
-A FastAPI + MySQL backend for a room-rental platform that matches tenants to
-room listings using an LLM-powered compatibility engine, with real-time chat
-and email notifications.
+Nestify is an AI-powered rent and flatmate finder platform built using FastAPI, MySQL, WebSockets, and LLM-powered compatibility scoring. The backend provides secure authentication, property management, compatibility scoring, real-time chat, and notification services.
 
 ---
 
@@ -70,8 +68,8 @@ pip install -r requirements.txt
 cp .env.example .env
 # Edit .env: set DATABASE_URL, JWT_SECRET_KEY, ANTHROPIC_API_KEY, MAIL_* vars
 
-# 5. Create the MySQL database
-mysql -u root -p -e "CREATE DATABASE rent_flatmate_finder CHARACTER SET utf8mb4;"
+# 5. Log into MySQL:
+    `mysql -u root -p -e "CREATE DATABASE nestify CHARACTER SET utf8mb4;"`
 
 # 6. Run the app (tables are auto-created on first startup via SQLAlchemy)
 python run.py
@@ -89,7 +87,7 @@ python run.py
 
 ```env
 # --- Database ---
-DATABASE_URL=mysql+pymysql://root:password@localhost:3306/rent_flatmate_finder
+DATABASE_URL=mysql+pymysql://root:password@localhost:3306/nestify
 
 # --- JWT Auth ---
 JWT_SECRET_KEY=change_this_to_a_long_random_secret
@@ -107,7 +105,7 @@ MAIL_PASSWORD=your_app_password
 MAIL_FROM=your_email@gmail.com
 MAIL_PORT=587
 MAIL_SERVER=smtp.gmail.com
-MAIL_FROM_NAME=Rent & Flatmate Finder
+MAIL_FROM_NAME=Nestify
 
 # --- Compatibility threshold that triggers "high match" email to owner ---
 HIGH_MATCH_THRESHOLD=80

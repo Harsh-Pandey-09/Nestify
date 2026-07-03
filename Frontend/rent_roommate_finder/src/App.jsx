@@ -88,7 +88,7 @@ export default function App() {
         <Navbar />
         <AppRoutes />
         <footer className="footer container">
-          <span>Rent &amp; Flatmate Finder</span>
+          <span>Nestify</span>
           <span>Built with FastAPI and React</span>
         </footer>
       </div>

@@ -23,7 +23,7 @@ export default function Navbar() {
       <div className="container navbar-inner">
         <Link to="/" className="brand">
           <span className="brand-mark" />
-          Flatmate Finder
+          Nestify
         </Link>
 
         <nav className="nav-links">

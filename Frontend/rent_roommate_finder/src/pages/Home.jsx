@@ -25,7 +25,7 @@ export default function Home() {
       <div className="container">
         <section className="hero">
           <div>
-            <span className="eyebrow">Rent &amp; Flatmate Finder</span>
+            <span className="eyebrow">Nestify</span>
             <h1>A calmer way to find your next room and flatmate</h1>
             <p>
               Search real listings, see a compatibility score for each one
