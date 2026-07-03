@@ -1,0 +1,3 @@
+ALLOWED_IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp"}
+MAX_IMAGE_SIZE_MB = 5
+MAX_PHOTOS_PER_LISTING = 8
